@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-100 via-white to-blue-200 flex flex-col min-h-screen"
+  >
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="/home.html" class="text-2xl font-bold text-blue-600"
+          >MyPortfolio</a
+        >
+        <ul class="flex space-x-6">
+          <li>
+            <a href="/home.html" class="text-gray-700 hover:text-blue-500"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" class="text-gray-700 hover:text-blue-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="/form.html" class="text-gray-700 hover:text-blue-500"
+              >Form</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center">
+      <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg text-center">
+        <h2 class="text-3xl font-bold text-blue-600 mb-4">
+          Welcome to My GoLang Project
+        </h2>
+        <p class="text-gray-700 mb-6">
+          This is a static homepage served using GoLang. <br />
+          Explore the navigation links to learn more about me or contact me!
+        </p>
+        <a
+          href="/about.html"
+          class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+        >
+          Learn More About Me
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+      <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+        &copy; 2024 Sahil Rana - MERN Stack + Java + GoLang Developer
+      </div>
+    </footer>
+  </body>
+</html>

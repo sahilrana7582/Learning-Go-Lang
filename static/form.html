@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-blue-100 via-white to-blue-200">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="home.html" class="text-2xl font-bold text-blue-600"
+          >MyPortfolio</a
+        >
+        <ul class="flex space-x-6">
+          <li>
+            <a href="home.html" class="text-gray-700 hover:text-blue-500"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="text-gray-700 hover:text-blue-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="form.html" class="text-gray-700 hover:text-blue-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex items-center justify-center min-h-screen">
+      <form
+        class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-lg"
+        action="/submit"
+        method="POST"
+      >
+        <h2 class="text-3xl font-bold mb-6 text-center text-blue-600">
+          Contact Me
+        </h2>
+
+        <!-- Name Field -->
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 mb-2">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-blue-400"
+          />
+        </div>
+
+        <!-- Email Field -->
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-blue-400"
+          />
+        </div>
+
+        <!-- Message Field -->
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 mb-2">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message here..."
+            rows="4"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring focus:ring-blue-400"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-10">
+      <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+        &copy; 2024 MyPortfolio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
